@@ -1,0 +1,176 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body,html{
+	height: 100%;
+
+}
+.wrapper{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 0px 100px;
+	background: url(../images/fair-3872942_1920.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+
+
+/*#####################	HEADER #########################*/
+
+.header{
+	background: rgba(102,63,24,0.90);
+	color: #e7be73;
+	font-family: monospace;
+	padding: 5px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.header_name{
+	font-size: 30px;
+	letter-spacing: 3px;
+
+}
+.header_cont{
+	cursor: pointer;
+	border-bottom: 1px solid black;
+	border-radius: 2px;
+	letter-spacing: 1px;
+	padding: 0px 1px;
+	text-align: center;
+	font-size: 20px;
+}
+
+
+.content{
+	display: flex;
+	flex: 1 1 auto;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+/*#################################game_canvas*/
+
+
+.game_canvas{
+	width: 306px;
+	height: 650px;
+	
+	display: flex;
+	flex-direction: column;
+	
+
+}
+.userstatusblock{
+	background: rgba(231,190,115,0.80);
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.userstatusblock p{}
+
+
+.userstatusblock p::before{
+	content: 'Ранг: ';
+	font-family: monospace;
+	letter-spacing: 2px;
+	margin-right: 6px;
+	color: #663f18;
+}
+.user_count_block{
+	background: rgba(102,63,24,0.90);
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #e7be73;
+}
+.user_count_block p::after{
+	content: 'clicks';
+	font-family: monospace;
+	letter-spacing: 2px;
+	margin-left: 6px;
+
+	
+}
+.tab_place{
+
+}
+.tab_place img:active{
+	width: 298px;
+	height: 300px;
+}
+.tab_place img{
+	margin-top: 60px;
+	border-radius: 55%
+}
+
+/*##################################Footer*/
+
+
+.footer{
+	background: rgba(102,63,24,0.90);
+	height: 50px;
+	display: flex;
+	color: #e7be73;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0px 20px;
+	font-style: italic;
+}
+
+/*#################### MEDIA TEGS ####################*/
+@media screen and (max-width: 1350px){
+	.ps1_img{
+	border-bottom: none;
+	
+}
+}
+
+@media screen and (max-width: 900px){
+	.wrapper{
+		padding: 0px;
+	}
+	.header_cont{
+		display: none;
+	}
+	.header{
+		justify-content: center;
+	}
+	.header, .footer{
+		background: rgba(0,0,0, 0.90);
+	}
+	.header_name{
+
+		letter-spacing: 5px;
+		
+	}
+
+
+
+
+	/*#############################posts*/
+	
+	/*#############################footer*/
+
+	.footer{
+		
+		justify-content: center;
+	}
+	.footer > p{
+		font-size: 12px;
+		letter-spacing: 1px;
+		margin-right: 10px;
+	}
+}
+
+
+	
